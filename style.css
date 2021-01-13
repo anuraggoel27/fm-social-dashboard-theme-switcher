@@ -1,0 +1,326 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  width: 100%;
+
+  font-family: "Inter", sans-serif;
+}
+.header {
+  position: relative;
+  bottom: 8px;
+}
+
+.heading {
+  display: inline-block;
+  position: relative;
+  top: 50px;
+}
+.heading h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.heading h4 {
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+.dark-mode {
+  display: inline-block;
+  position: absolute;
+  right: 260px;
+  top: 50px;
+  font-weight: 700;
+}
+.big-cards {
+  width: 230px;
+  height: 170px;
+  margin: 20px;
+
+  display: inline-block;
+  border-radius: 5px;
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+.smaller-cards {
+  width: 230px;
+  height: 130px;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+
+  border-radius: 10px;
+  position: relative;
+}
+.first {
+  margin-left: 0px;
+}
+.insta {
+  border-top: 4px solid;
+  border-radius: 10px;
+}
+.small-container {
+  position: relative;
+  top: 100px;
+  margin-bottom: 50px;
+}
+
+/************** TEXT ***************/
+
+.followers {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+h4 {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+.handle {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+
+  margin-left: 5px;
+}
+.increased,
+.decreased {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.topic {
+  display: inline-block;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+.number {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.increase {
+  display: inline-block;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+.decrease {
+  display: inline-block;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+.updown {
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.icon {
+  position: absolute;
+  right: 20px;
+}
+.side-heading {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.attribution {
+  position: absolute;
+  bottom: -100px;
+  left: 40%;
+}
+
+/* ***************SWITCH********** */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*************COLOUR SCHEME**********/
+
+/*DARK MODE*/
+body.dark {
+  background-color: hsl(230, 17%, 14%);
+
+  color: white;
+}
+.header.dark {
+  background-color: hsl(232, 19%, 15%);
+}
+.header.dark h1 {
+  color: white;
+}
+.heading.dark h4 {
+  color: hsl(228, 34%, 66%);
+}
+
+.big-cards.dark {
+  background-color: hsl(228, 28%, 20%);
+}
+.smaller-cards.dark {
+  background-color: hsl(228, 28%, 20%);
+}
+.slider.dark:before {
+  background-color: hsl(230, 17%, 14%);
+}
+
+/************** TEXT ***************/
+
+h4.dark {
+  color: hsl(228, 34%, 66%);
+}
+.handle.dark {
+  color: hsl(228, 34%, 66%);
+}
+
+.increased.dark {
+  color: hsl(163, 72%, 41%);
+}
+.decreased.dark {
+  color: hsl(356, 69%, 56%);
+}
+
+.topic.dark {
+  color: hsl(228, 34%, 66%);
+}
+.number.dark {
+  color: white;
+}
+.increase.dark {
+  color: hsl(163, 72%, 41%);
+}
+.decrease.dark {
+  color: hsl(356, 69%, 56%);
+}
+
+/*LIGHT MODE*/
+body.light {
+  background-color: hsl(0, 0%, 100%);
+
+  color: white;
+}
+.header.light {
+  background-color: hsl(225, 100%, 98%);
+}
+.heading.light h1 {
+  color: hsl(230, 17%, 14%);
+}
+.dark-mode {
+  color: hsl(230, 22%, 74%);
+}
+.heading.light h4 {
+  color: hsl(228, 12%, 44%);
+}
+
+.big-cards.light {
+  background-color: hsl(227, 47%, 96%);
+}
+.smaller-cards.light {
+  background-color: hsl(227, 47%, 96%);
+}
+.slider.light:before {
+  background-color: hsl(0, 0%, 100%);
+}
+
+/************** TEXT ***************/
+
+.side-heading.light {
+  color: hsl(230, 17%, 14%);
+}
+h4.light {
+  color: hsl(228, 12%, 44%);
+}
+.handle.light {
+  color: hsl(228, 12%, 44%);
+}
+.followers.light {
+  color: hsl(230, 17%, 14%);
+}
+.increased.light {
+  color: hsl(163, 72%, 41%);
+}
+.decreased.light {
+  color: hsl(356, 69%, 56%);
+}
+
+.topic.light {
+  color: hsl(228, 12%, 44%);
+}
+.number.light {
+  color: hsl(230, 17%, 14%);
+}
+.increase.light {
+  color: hsl(163, 72%, 41%);
+}
+.decrease.light {
+  color: hsl(356, 69%, 56%);
+}
